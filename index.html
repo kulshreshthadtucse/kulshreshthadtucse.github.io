@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Personal Portfolio</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #000000;
+        color: #e6e6e6;
+    }
+
+    header {
+        background: #121212;
+        padding: 60px 20px;
+        text-align: center;
+        border-bottom: 2px solid #00e5ff;
+    }
+
+    header h1 {
+        font-size: 42px;
+        letter-spacing: 1px;
+        color: #00e5ff;
+    }
+
+    header p {
+        font-size: 18px;
+        opacity: 0.8;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px;
+        background: #1c1c1c;
+        border-bottom: 1px solid #00e5ff;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: #e6e6e6;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 14px;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        background: #00e5ff;
+        color: #000;
+    }
+
+    section {
+        padding: 6px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+        color: #00e5ff;
+        margin-bottom: 20px;
+        border-left: 5px solid #00e5ff;
+        padding-left: 12px;
+    }
+
+    #about img {
+        width: 150px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 2px solid #00e5ff;
+        box-shadow: 0 0 10px #00e5ff;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: #1a1a1a;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+        transition: 0.3s;
+        border-top: 3px solid #00e5ff;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 0 18px rgba(0, 229, 255, 0.7);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+        border: 1px solid #00e5ff;
+    }
+
+    .card h3 {
+        color: #00e5ff;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background: #121212;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        border-top: 2px solid #00e5ff;
+        font-size: 14px;
+    }
+
+    a {
+        color: #00e5ff;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Kulshreshtha Dubey</h1>
+    <p>Web Developer | Designer | CSE Student</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#education">Education / Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to my personal portfolio website! This site showcases my skills, education, and projects. 
+      You will be knowing about me after going through this site.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+        <img src="my photo.jpg" alt="My Photo">
+        <p>Hi! I'm a Computer Science student at Delhi Technological University with a passion for exploring technology and understanding how things work behind the scenes. I love creating projects that challenge me, help me think differently, and allow me to turn ideas into something real.
+        Outside of tech, I'm someone who enjoys singing, creativity, and finding inspiration in new experiences. I believe in staying curious and continuously growing.</p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education / Skills</h2>
+    <h3>Schooling</h3>
+    <ul>
+        <li>AGDAV Centenary Public School – till 10th</li>
+        <li>Kasturi Ram International School – 11th and 12th</li>
+    </ul>
+
+    <h3>Higher Education</h3>
+    <ul>
+        <li>B.Tech in Computer Science, DTU (2025–2029)</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, C</li>
+        <li>Git, GitHub</li>
+        <li>Basic ML / AI</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Student Result Management System</h3>
+            <img src="result management.jpg" />
+            <p>A C-based console application where users can enter student details, and the system calculates total marks, percentage, and grade. Demonstrates file handling and structured programming.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive Portfolio Website</h3>
+            <img src="Screenshot 2025-11-11 163142.png" />
+            <p>A personal portfolio built using HTML, CSS, and JS. Fully responsive with clean UI components and smooth layouts.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:kulshreshtha10d@gmail.com">kulshreshtha10d@gmail.com</a></p>
+    <p>Phone: <a href="tel:8595406971">8595406971</a></p>
+    <p>GitHub: <a href="https://github.com/kulshreshthadtucse" target="_blank">Click here</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Kulshreshtha Dubey. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
